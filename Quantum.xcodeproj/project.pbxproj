@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9D92A71426E00BA395D /* NetworkModel.swift */; };
+		7E4FF9DC2A71427B00BA395D /* NetwofkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */; };
+		7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */; };
 		7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */; };
 		7EC2F7952A695EB400CAD2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7942A695EB400CAD2BF /* ContentView.swift */; };
 		7EC2F7972A695EB500CAD2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2F7962A695EB500CAD2BF /* Assets.xcassets */; };
 		7EC2F79A2A695EB500CAD2BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2F7992A695EB500CAD2BF /* Preview Assets.xcassets */; };
+		7EC2F7A42A6964AC00CAD2BF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7A32A6964AC00CAD2BF /* SplashScreen.swift */; };
+		7EC2F7A72A69671D00CAD2BF /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7A62A69671D00CAD2BF /* MainMenuView.swift */; };
+		7EC2F7AD2A69723E00CAD2BF /* LessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7AC2A69723E00CAD2BF /* LessonsView.swift */; };
+		7EC2F7AF2A69764A00CAD2BF /* LessonDesciption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7AE2A69764A00CAD2BF /* LessonDesciption.swift */; };
+		7EC2F7B12A697AF300CAD2BF /* InvestDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B02A697AF300CAD2BF /* InvestDiaryView.swift */; };
+		7EC2F7B32A69862000CAD2BF /* InvestDiaryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B22A69862000CAD2BF /* InvestDiaryList.swift */; };
+		7EC2F7B52A6A73B200CAD2BF /* InvestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B42A6A73B200CAD2BF /* InvestViewModel.swift */; };
+		7EC2F7B72A6A75A900CAD2BF /* InvestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B62A6A75A900CAD2BF /* InvestModel.swift */; };
+		7EC2F7B92A6A8E2200CAD2BF /* VisualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B82A6A8E2200CAD2BF /* VisualView.swift */; };
+		7EC2F7BE2A6A936200CAD2BF /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */; };
+		7EC2F7C02A6AB70A00CAD2BF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */; };
+		7EC2F7C22A6AB8E800CAD2BF /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E4FF9D92A71426E00BA395D /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwofkService.swift; sourceTree = "<group>"; };
+		7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
 		7EC2F78F2A695EB400CAD2BF /* Quantum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quantum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumApp.swift; sourceTree = "<group>"; };
 		7EC2F7942A695EB400CAD2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7EC2F7962A695EB500CAD2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC2F7992A695EB500CAD2BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EC2F7A02A6960B100CAD2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7EC2F7A32A6964AC00CAD2BF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		7EC2F7A62A69671D00CAD2BF /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		7EC2F7AC2A69723E00CAD2BF /* LessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsView.swift; sourceTree = "<group>"; };
+		7EC2F7AE2A69764A00CAD2BF /* LessonDesciption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDesciption.swift; sourceTree = "<group>"; };
+		7EC2F7B02A697AF300CAD2BF /* InvestDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestDiaryView.swift; sourceTree = "<group>"; };
+		7EC2F7B22A69862000CAD2BF /* InvestDiaryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestDiaryList.swift; sourceTree = "<group>"; };
+		7EC2F7B42A6A73B200CAD2BF /* InvestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestViewModel.swift; sourceTree = "<group>"; };
+		7EC2F7B62A6A75A900CAD2BF /* InvestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestModel.swift; sourceTree = "<group>"; };
+		7EC2F7B82A6A8E2200CAD2BF /* VisualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualView.swift; sourceTree = "<group>"; };
+		7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +56,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC2F7BE2A6A936200CAD2BF /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4FF9D82A71425900BA395D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7E4FF9D92A71426E00BA395D /* NetworkModel.swift */,
+				7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		7EC2F7862A695EB400CAD2BF = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +91,17 @@
 		7EC2F7912A695EB400CAD2BF /* Quantum */ = {
 			isa = PBXGroup;
 			children = (
+				7E4FF9D82A71425900BA395D /* NetworkService */,
+				7EC2F7AB2A6971FC00CAD2BF /* Visual */,
+				7EC2F7AA2A6971F500CAD2BF /* Diary */,
+				7EC2F7A92A6971EF00CAD2BF /* Settings */,
+				7EC2F7A82A6971E800CAD2BF /* Lessons */,
+				7EC2F7A52A69670400CAD2BF /* MainView */,
 				7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */,
 				7EC2F7942A695EB400CAD2BF /* ContentView.swift */,
+				7EC2F7A32A6964AC00CAD2BF /* SplashScreen.swift */,
 				7EC2F7962A695EB500CAD2BF /* Assets.xcassets */,
+				7EC2F7A02A6960B100CAD2BF /* Info.plist */,
 				7EC2F7982A695EB500CAD2BF /* Preview Content */,
 			);
 			path = Quantum;
@@ -65,6 +113,52 @@
 				7EC2F7992A695EB500CAD2BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EC2F7A52A69670400CAD2BF /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2F7A62A69671D00CAD2BF /* MainMenuView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		7EC2F7A82A6971E800CAD2BF /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2F7AC2A69723E00CAD2BF /* LessonsView.swift */,
+				7EC2F7AE2A69764A00CAD2BF /* LessonDesciption.swift */,
+				7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */,
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
+		7EC2F7A92A6971EF00CAD2BF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */,
+				7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7EC2F7AA2A6971F500CAD2BF /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2F7B02A697AF300CAD2BF /* InvestDiaryView.swift */,
+				7EC2F7B22A69862000CAD2BF /* InvestDiaryList.swift */,
+				7EC2F7B42A6A73B200CAD2BF /* InvestViewModel.swift */,
+				7EC2F7B62A6A75A900CAD2BF /* InvestModel.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		7EC2F7AB2A6971FC00CAD2BF /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2F7B82A6A8E2200CAD2BF /* VisualView.swift */,
+			);
+			path = Visual;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +177,9 @@
 			dependencies = (
 			);
 			name = Quantum;
+			packageProductDependencies = (
+				7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */,
+			);
 			productName = Quantum;
 			productReference = 7EC2F78F2A695EB400CAD2BF /* Quantum.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 7EC2F7862A695EB400CAD2BF;
+			packageReferences = (
+				7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 7EC2F7902A695EB400CAD2BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +237,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC2F7A42A6964AC00CAD2BF /* SplashScreen.swift in Sources */,
+				7E4FF9DC2A71427B00BA395D /* NetwofkService.swift in Sources */,
 				7EC2F7952A695EB400CAD2BF /* ContentView.swift in Sources */,
+				7EC2F7B72A6A75A900CAD2BF /* InvestModel.swift in Sources */,
+				7EC2F7C22A6AB8E800CAD2BF /* CustomFont.swift in Sources */,
+				7EC2F7B12A697AF300CAD2BF /* InvestDiaryView.swift in Sources */,
+				7EC2F7AD2A69723E00CAD2BF /* LessonsView.swift in Sources */,
+				7EC2F7A72A69671D00CAD2BF /* MainMenuView.swift in Sources */,
 				7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */,
+				7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */,
+				7EC2F7B52A6A73B200CAD2BF /* InvestViewModel.swift in Sources */,
+				7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */,
+				7EC2F7B32A69862000CAD2BF /* InvestDiaryList.swift in Sources */,
+				7EC2F7C02A6AB70A00CAD2BF /* SettingsView.swift in Sources */,
+				7EC2F7B92A6A8E2200CAD2BF /* VisualView.swift in Sources */,
+				7EC2F7AF2A69764A00CAD2BF /* LessonDesciption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +384,12 @@
 				DEVELOPMENT_TEAM = 9QYQL46W44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quantum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = quantum.Quantum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +417,12 @@
 				DEVELOPMENT_TEAM = 9QYQL46W44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quantum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +430,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = quantum.Quantum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +461,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EC2F7872A695EB400CAD2BF /* Project object */;
 }
