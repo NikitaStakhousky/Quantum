@@ -39,34 +39,6 @@ struct SettingsView: View {
                 .toggleStyle(SwitchToggleStyle(tint: .gray))
                 .padding()
                 .frame(width: 300)
-          HStack {
-            Text("Font size")
-              .font(.system(size: 34, weight: .bold))
-              .foregroundColor(.white)
-            Picker("Please choose a color", selection: $currentSize) {
-              ForEach(selectedSize, id: \.self) {
-                Text("\($0)")
-                  .foregroundColor(.white)
-              }
-            }.pickerStyle(.menu)
-              .colorMultiply(.white).colorInvert()
-              .colorMultiply(.black).colorInvert()
-            Button {
-              fontSize = currentSize
-            } label: {
-              Image(systemName: "pencil")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.white)
-                .overlay(
-                  Circle()
-                    .stroke(Color.white, lineWidth: 2)
-                    .shadow(color: .white, radius: 6)
-                    .frame(width: 20, height: 20)
-                ).frame(width: 20, height: 20)
-            }
-
-          }
         }
       }
     }

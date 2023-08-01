@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class InvestViewModel: ObservableObject {
   @Published var model: [InvestModel] = []
   @Published var showModal: Bool = false
-  @Published var amountArray: [Double] = [10, 20]
+  var amountArray = (UserDefaults.standard.array(forKey: "amountArray") as? [Double]) ?? [1,2,3,4]
   
 //  func addNewValue(date: Date, amount: Int, currency: String) {
 //    let dateFormatter = DateFormatter()
@@ -25,7 +26,6 @@ final class InvestViewModel: ObservableObject {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "dd.MM.YYYY"
     amountArray.append(Double(amount))
-    UserDefaults.standard.set(amountArray, forKey: "amountArray")
     model.append(InvestModel(date: dateFormatter.string(from: date), amount: amount, currency: currency))
     save()
   }
@@ -34,6 +34,7 @@ final class InvestViewModel: ObservableObject {
       if let encoded = try? JSONEncoder().encode(model) {
           UserDefaults.standard.set(encoded, forKey: "SavedData")
       }
+    UserDefaults.standard.set(amountArray, forKey: "amountArray")
   }
   
   init() {

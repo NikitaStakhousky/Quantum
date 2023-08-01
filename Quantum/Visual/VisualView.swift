@@ -11,7 +11,7 @@ import SwiftUICharts
 struct VisualView: View {
   @StateObject var viewModel: InvestViewModel
   @Environment(\.colorScheme) var colorScheme
-  let data = (UserDefaults.standard.array(forKey: "amountArray") as? [Double]) ?? []
+  let data = (UserDefaults.standard.array(forKey: "amountArray") as? [Double]) ?? [10, 20]
   
   var body: some View {
     ZStack {
