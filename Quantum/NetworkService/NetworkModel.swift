@@ -19,6 +19,7 @@ struct Lesson: Codable, Identifiable {
     case lessontitle = "lessontitle"
   }
 }
+
 struct Currency: Codable, Identifiable {
   var id = UUID()
   let currency: String

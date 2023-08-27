@@ -15,6 +15,8 @@
 		7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9D92A71426E00BA395D /* NetworkModel.swift */; };
 		7E4FF9DC2A71427B00BA395D /* NetwofkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */; };
 		7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */; };
+		7E82BD9C2A99AF7C004B6B72 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 7E82BD9B2A99AF7C004B6B72 /* PopupView */; };
+		7E82BD9F2A99B41A004B6B72 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E82BD9E2A99B41A004B6B72 /* PopupView.swift */; };
 		7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */; };
 		7EC2F7952A695EB400CAD2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7942A695EB400CAD2BF /* ContentView.swift */; };
 		7EC2F7972A695EB500CAD2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2F7962A695EB500CAD2BF /* Assets.xcassets */; };
@@ -42,6 +44,7 @@
 		7E4FF9D92A71426E00BA395D /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwofkService.swift; sourceTree = "<group>"; };
 		7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
+		7E82BD9E2A99B41A004B6B72 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		7EC2F78F2A695EB400CAD2BF /* Quantum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quantum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumApp.swift; sourceTree = "<group>"; };
 		7EC2F7942A695EB400CAD2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E82BD9C2A99AF7C004B6B72 /* PopupView in Frameworks */,
 				7EC2F7BE2A6A936200CAD2BF /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +105,14 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		7E82BD9D2A99B406004B6B72 /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				7E82BD9E2A99B41A004B6B72 /* PopupView.swift */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
 		7EC2F7862A695EB400CAD2BF = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		7EC2F7912A695EB400CAD2BF /* Quantum */ = {
 			isa = PBXGroup;
 			children = (
+				7E82BD9D2A99B406004B6B72 /* PopupView */,
 				7E34E0922A8B2E33006C82DA /* Events */,
 				7E34E0912A8B2E2A006C82DA /* Currencies */,
 				7E4FF9D82A71425900BA395D /* NetworkService */,
@@ -210,6 +223,7 @@
 			name = Quantum;
 			packageProductDependencies = (
 				7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */,
+				7E82BD9B2A99AF7C004B6B72 /* PopupView */,
 			);
 			productName = Quantum;
 			productReference = 7EC2F78F2A695EB400CAD2BF /* Quantum.app */;
@@ -241,6 +255,7 @@
 			mainGroup = 7EC2F7862A695EB400CAD2BF;
 			packageReferences = (
 				7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */,
+				7E82BD9A2A99AF7C004B6B72 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 7EC2F7902A695EB400CAD2BF /* Products */;
 			projectDirPath = "";
@@ -279,6 +294,7 @@
 				7E34E0942A8B2E44006C82DA /* Currencies.swift in Sources */,
 				7EC2F7A72A69671D00CAD2BF /* MainMenuView.swift in Sources */,
 				7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */,
+				7E82BD9F2A99B41A004B6B72 /* PopupView.swift in Sources */,
 				7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */,
 				7EC2F7B52A6A73B200CAD2BF /* InvestViewModel.swift in Sources */,
 				7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */,
@@ -499,6 +515,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7E82BD9A2A99AF7C004B6B72 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
@@ -510,6 +534,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7E82BD9B2A99AF7C004B6B72 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E82BD9A2A99AF7C004B6B72 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
 		7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7EC2F7BC2A6A936200CAD2BF /* XCRemoteSwiftPackageReference "ChartView" */;
