@@ -13,6 +13,7 @@ struct LessonsView: View {
   @State var showPopup = false
   @State var image: String = ""
   @State var title: String = ""
+  @State var preview: String = ""
   
   var body: some View {
     ZStack {
@@ -39,7 +40,7 @@ struct LessonsView: View {
           .padding(.bottom, 40)
         VStack(spacing: 14) {
           ForEach(viewModel.model) { item in
-            if item.lessontitle == "For beginner" {
+            if item.lessontitle == "Lesson 1" {
               NavigationLink {
                 LessonDesciption(lessonText: item.text, lessonImg: item.img, lessonTitle: item.lessontitle)
               } label: {
@@ -59,6 +60,7 @@ struct LessonsView: View {
                 showPopup = true
                 image = item.img
                 title = item.lessontitle
+                preview = item.lessonPreview
               } label: {
                 Text(item.lessontitle)
                   .font(.system(size: 34, weight: .bold))
@@ -77,7 +79,7 @@ struct LessonsView: View {
       }
     }
     .popup(isPresented: $showPopup) {
-      PopupView(img: image, title: title)
+        PopupView(img: image, title: title, lessonPreview: preview).environmentObject(PurchaseManager())
     } customize: {
       $0
         .type(.floater())

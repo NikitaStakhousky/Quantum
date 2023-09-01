@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4917AA2A9D0CA000851B3B /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4917A92A9D0CA000851B3B /* PurchaseManager.swift */; };
 		7E34E0942A8B2E44006C82DA /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0932A8B2E44006C82DA /* Currencies.swift */; };
 		7E34E0982A8B3055006C82DA /* CurrenciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0972A8B3055006C82DA /* CurrenciesCell.swift */; };
 		7E34E09A2A8B4225006C82DA /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0992A8B4225006C82DA /* CurrencyViewModel.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D4917A62A9BB3A300851B3B /* QuantumAIConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = QuantumAIConfiguration.storekit; sourceTree = "<group>"; };
+		5D4917A92A9D0CA000851B3B /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		7E34E0932A8B2E44006C82DA /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 		7E34E0972A8B3055006C82DA /* CurrenciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCell.swift; sourceTree = "<group>"; };
 		7E34E0992A8B4225006C82DA /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		7EC2F7912A695EB400CAD2BF /* Quantum */ = {
 			isa = PBXGroup;
 			children = (
+				5D4917A92A9D0CA000851B3B /* PurchaseManager.swift */,
 				7E82BD9D2A99B406004B6B72 /* PopupView */,
 				7E34E0922A8B2E33006C82DA /* Events */,
 				7E34E0912A8B2E2A006C82DA /* Currencies */,
@@ -147,6 +151,7 @@
 				7EC2F7962A695EB500CAD2BF /* Assets.xcassets */,
 				7EC2F7A02A6960B100CAD2BF /* Info.plist */,
 				7EC2F7982A695EB500CAD2BF /* Preview Content */,
+				5D4917A62A9BB3A300851B3B /* QuantumAIConfiguration.storekit */,
 			);
 			path = Quantum;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				7EC2F7A72A69671D00CAD2BF /* MainMenuView.swift in Sources */,
 				7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */,
 				7E82BD9F2A99B41A004B6B72 /* PopupView.swift in Sources */,
+				5D4917AA2A9D0CA000851B3B /* PurchaseManager.swift in Sources */,
 				7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */,
 				7EC2F7B52A6A73B200CAD2BF /* InvestViewModel.swift in Sources */,
 				7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */,
