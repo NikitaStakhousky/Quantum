@@ -13,12 +13,14 @@ struct Lesson: Codable, Identifiable {
   let text: String
   let lessontitle: String
   let lessonPreview: String
+  let productId: String
   
   enum CodingKeys: String, CodingKey {
     case img = "img"
     case text = "text"
     case lessontitle = "lessontitle"
     case lessonPreview = "lessonPreview"
+    case productId = "productId"
   }
 }
 

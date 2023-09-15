@@ -1,16 +1,14 @@
 //
-//  LessonViewModel.swift
+//  PurchaseManager.swift
 //  Quantum
 //
-//  Created by Nikita Stshovsky on 26.07.2023.
+//  Created by Nikita Stshovsky on 07.09.2023.
 //
 
 import Foundation
 import StoreKit
 
-  final class LessonViewModel: ObservableObject {
-    var model: [Lesson] = []
-    private let networkService = NetworkService()
+final class PurchaseManager: ObservableObject {
     private let productIds = ["lesson_2", "lesson_3", "lesson_4", "lesson_5", "lesson_6", "lesson_7"]
     
     @Published
@@ -31,15 +29,6 @@ import StoreKit
       updates?.cancel()
     }
     
-    func getData() {
-      networkService.getData { lesson in
-        DispatchQueue.main.async {
-          self.model = lesson
-        }
-      }
-    }
-    
-      @MainActor
     func updatePurchasedProducts() async {
       for await result in Transaction.currentEntitlements {
         guard case .verified(let transaction) = result else {
@@ -61,11 +50,10 @@ import StoreKit
         }
       }
     }
-    @MainActor
+    
     func loadProducts() async throws {
       guard !self.productsLoaded else { return }
       self.products = try await Product.products(for: productIds)
-        print(productIds)
       self.productsLoaded = true
     }
     
@@ -74,8 +62,8 @@ import StoreKit
       
       switch result {
       case let .success(.verified(transaction)):
-        await self.updatePurchasedProducts()
         await transaction.finish()
+        await self.updatePurchasedProducts()
       case let .success(.unverified(_, error)):
         break
       case .pending:
@@ -86,5 +74,5 @@ import StoreKit
         break
       }
     }
-  }
+}
 

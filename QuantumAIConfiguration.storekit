@@ -1,0 +1,110 @@
+{
+  "identifier" : "DE4C676F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463510507",
+      "localizations" : [
+        {
+          "description" : "New lessons",
+          "displayName" : "Lessons",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_2",
+      "referenceName" : "lesson2",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463813145",
+      "localizations" : [
+        {
+          "description" : "New Lesson",
+          "displayName" : "Lesson",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_3",
+      "referenceName" : "lesson3",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463813267",
+      "localizations" : [
+        {
+          "description" : "New Lesson",
+          "displayName" : "Lesson",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_4",
+      "referenceName" : "lesson4",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463813283",
+      "localizations" : [
+        {
+          "description" : "New Lesson",
+          "displayName" : "Lesson",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_5",
+      "referenceName" : "lesson5",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463813491",
+      "localizations" : [
+        {
+          "description" : "New Lesson",
+          "displayName" : "Lesson",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_6",
+      "referenceName" : "lesson6",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6463813625",
+      "localizations" : [
+        {
+          "description" : "New Lesson",
+          "displayName" : "Lesson",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lesson_7",
+      "referenceName" : "lesson7",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6456454272",
+    "_developerTeamID" : "BJZ5B5QV9W",
+    "_lastSynchronizedDate" : 715267053.03922403
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

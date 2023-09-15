@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainMenuView: View {
+  
+  @State private var showCalculator: Bool = false
+  
   var body: some View {
     NavigationView {
       ZStack {
@@ -18,16 +21,33 @@ struct MainMenuView: View {
           .scaledToFill()
           .ignoresSafeArea()
         VStack(alignment: .center) {
-          HStack {
-            Image("quantumAI")
-              .resizable()
-              .scaledToFit()
-              .frame(width: 160, height: 160)
-          }.padding(.trailing, 180)
-          Spacer()
-          menuButtons()
-            .padding(.trailing, 120)
-            .padding(.bottom, 60)
+          VStack(alignment: .center) {
+            HStack {
+              Image("quantumAI")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160, height: 160)
+            }.padding(.trailing, 240)
+            Spacer()
+            menuButtons()
+              .padding(.trailing, 80)
+            //.padding(.bottom, 40)
+          }.padding(.leading, 40)
+          NavigationLink {
+            FinCalculatorView()
+              .preferredColorScheme(.dark)
+          } label: {
+            Text("calculate procent")
+              .font(.system(size: 26, weight: .bold))
+              .frame(width: 280, height: 54)
+              .foregroundColor(.white)
+              .cornerRadius(12)
+              .overlay(
+                RoundedRectangle(cornerRadius: 28)
+                  .stroke(Color.white, lineWidth: 2)
+                  .shadow(color: .white, radius: 6)
+              )
+          }.padding(.trailing, 40)
         }
       }
     }
@@ -63,7 +83,7 @@ struct MainMenuView: View {
             .font(.system(size: 20, weight: .bold))
         }
       }
-    }.padding(.leading, 80)
+    }
     HStack(spacing: 40) {
       NavigationLink {
         InvestDiaryList().environmentObject(InvestViewModel())
@@ -92,7 +112,7 @@ struct MainMenuView: View {
             .font(.system(size: 24, weight: .bold))
         }
       }
-    }.padding(.leading, 90)
+    }
     HStack(spacing: 40) {
       NavigationLink {
         Currencies(viewModel: CurrencyViewModel())
@@ -121,7 +141,7 @@ struct MainMenuView: View {
             .font(.system(size: 24, weight: .bold))
         }
       }
-    }.padding(.leading, 80)
+    }
   }
 }
 

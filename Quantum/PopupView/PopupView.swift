@@ -12,9 +12,10 @@ struct PopupView: View {
     var img: String
     var title: String
     var lessonPreview: String
+    var product: Product?
     @EnvironmentObject
-    private var purchaseManager: PurchaseManager
-    
+    private var purchaseManager: LessonViewModel
+
     var body: some View {
         ZStack {
             Color.black.opacity(0.7)
@@ -49,13 +50,13 @@ struct PopupView: View {
                 Button {
                     Task {
                         do {
-                            try await purchaseManager.purchase(purchaseManager.products.first!)
+                            try await purchaseManager.purchase(product!)
                         } catch {
                             print(error)
                         }
                     }
                 } label: {
-                    Text("Buy")
+                    Text(product?.displayPrice ?? "1.99$")
                         .font(.system(size: 34, weight: .bold))
                         .frame(width: 280, height: 54)
                         .foregroundColor(.white)
@@ -75,20 +76,5 @@ struct PopupView: View {
                     .stroke(Color.white, lineWidth: 2)
                     .shadow(color: .white, radius: 6)
             )
-            .task {
-                Task {
-                    do {
-                        try await purchaseManager.loadProducts()
-                    } catch {
-                        print(error)
-                    }
-                }
-             }
           }
        }
-
-struct PopupView_Previews: PreviewProvider {
-    static var previews: some View {
-        PopupView(img: "https://images.unsplash.com/photo-1692854236272-cc49076a2629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80", title: "lesson 1", lessonPreview: "How to trade market?")
-    }
-}
