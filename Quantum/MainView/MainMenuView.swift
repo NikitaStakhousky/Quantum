@@ -21,18 +21,8 @@ struct MainMenuView: View {
           .scaledToFill()
           .ignoresSafeArea()
         VStack(alignment: .center) {
-          VStack(alignment: .center) {
-            HStack {
-              Image("quantumAI")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 160, height: 160)
-            }.padding(.trailing, 240)
-            Spacer()
             menuButtons()
-              .padding(.trailing, 80)
-            //.padding(.bottom, 40)
-          }.padding(.leading, 40)
+              .padding(.bottom, 40)
           NavigationLink {
             FinCalculatorView()
               .preferredColorScheme(.dark)
@@ -47,7 +37,16 @@ struct MainMenuView: View {
                   .stroke(Color.white, lineWidth: 2)
                   .shadow(color: .white, radius: 6)
               )
-          }.padding(.trailing, 40)
+          }
+        }
+      }
+      .toolbar {
+        HStack {
+          Image("quantumAI")
+          .resizable()
+          .scaledToFit()
+          .frame(width: 160, height: 160)
+          Spacer()
         }
       }
     }

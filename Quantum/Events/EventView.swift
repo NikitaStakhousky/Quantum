@@ -46,13 +46,23 @@ struct EventView: View {
             .font(.system(size: 12, weight: .bold))
         }.padding(.top, -20)
           .frame(width: 370)
-        TextField("Name", text: $userName)
-          .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
-          .frame(width: 300, height: 40)
+        VStack(alignment: .leading) {
+          Text("Name")
+            .font(.system(size: 30))
+            .foregroundColor(.white)
+          TextField("", text: $userName)
+            .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
+            .frame(width: 300, height: 40)
+        }
           .padding(.top, 20)
-        TextField("Mail", text: $mail)
-          .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
-          .frame(width: 300, height: 40)
+        VStack(alignment: .leading) {
+            Text("Mail")
+              .font(.system(size: 30))
+              .foregroundColor(.white)
+          TextField("", text: $mail)
+            .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
+            .frame(width: 300, height: 40)
+        }
           .padding(.top, 20)
         Button {
           viewModel.showAlert.toggle()

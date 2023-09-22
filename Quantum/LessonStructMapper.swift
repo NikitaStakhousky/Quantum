@@ -16,7 +16,7 @@ class StructMapper {
         for index in 0...5 {
            let lesson = lessonModel[index] 
             let product = productModel[index]
-                model.append(LessonModel(image: lesson.img, text: lesson.text, lessontitle: lesson.lessontitle, lessonPreview: lesson.lessonPreview, productId: lesson.productId, product: product))
+                model.append(LessonModel(image: lesson.img, text: lesson.text, lessontitle: lesson.lessontitle, lessonPreview: lesson.lessonPreview, product: product))
         }
     return model
   }

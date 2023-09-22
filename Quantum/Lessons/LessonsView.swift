@@ -41,6 +41,20 @@ struct LessonsView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold))
                     .padding(.bottom, 40)
+              NavigationLink {
+                FirstLessonView()
+              } label: {
+                Text("Lesson 1")
+                    .font(.system(size: 34, weight: .bold))
+                    .frame(width: 280, height: 54)
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 28)
+                            .stroke(Color.white, lineWidth: 2)
+                            .shadow(color: .white, radius: 6)
+                    )
+              }.padding(.bottom, 10)
                     VStack(spacing: 14) {
                         ForEach(model) { item in
                             if viewModel.purchasedProductIDs.contains(item.product.id) {
@@ -116,8 +130,11 @@ struct LessonsView: View {
                 await viewModel.updatePurchasedProducts()
                                     
             }
-            .onAppear {
-                viewModel.getData()
-            }
         }
     }
+
+struct LessonsView_Previews: PreviewProvider {
+  static var previews: some View {
+    LessonsView(viewModel: LessonViewModel())
+  }
+}

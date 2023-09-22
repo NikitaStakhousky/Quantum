@@ -26,13 +26,4 @@ struct LessonModel: Identifiable {
         self.productId = productId
         self.product = product
     }
-    init(id: UUID = UUID(), lesson: Lesson, product: Product) {
-        self.id = id
-        self.image = lesson.img
-        self.text = lesson.text
-        self.lessontitle = lesson.lessontitle
-        self.lessonPreview = lesson.lessonPreview
-        self.productId = lesson.productId
-        self.product = product
-    }
 }
