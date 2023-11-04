@@ -50,7 +50,9 @@ struct PopupView: View {
                 Button {
                     Task {
                         do {
-                            try await purchaseManager.purchase(product!)
+                          if let product = product {
+                            try await purchaseManager.purchase(product)
+                          }
                         } catch {
                             print(error)
                         }

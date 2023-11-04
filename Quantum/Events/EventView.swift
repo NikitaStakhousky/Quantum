@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct EventView: View {
-  @StateObject var viewModel: EventViewModel
   @State var userName: String = ""
   @State var mail: String = ""
+  @State var showAlert: Bool = false
   
   var body: some View {
     ZStack {
@@ -28,65 +28,65 @@ struct EventView: View {
           image
             .resizable()
             .scaledToFit()
-            .frame(width: 340, height: 340)
+            .frame(width: 340, height: 260)
             .shadow(color: .white, radius: 6)
         } placeholder: {
           ProgressView()
             .background(Color.black)
-            .frame(width: 340, height: 340)
+            .frame(width: 340, height: 260)
         }
         VStack {
-          Text("Quantum AI is proud to announce a new lecture series on investing in stocks and cryptocurrencies.")
-            .foregroundColor(.white)
-            .font(.system(size: 18, weight: .bold))
-            .multilineTextAlignment(.center)
-          Text("This course will provide you with the knowledge and tools you need to make informed investment decisions in these exciting and rapidly evolving markets.")
-            .multilineTextAlignment(.center)
-            .foregroundColor(.white)
-            .font(.system(size: 12, weight: .bold))
-        }.padding(.top, -20)
-          .frame(width: 370)
-        VStack(alignment: .leading) {
-          Text("Name")
-            .font(.system(size: 30))
-            .foregroundColor(.white)
-          TextField("", text: $userName)
-            .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
-            .frame(width: 300, height: 40)
-        }
-          .padding(.top, 20)
-        VStack(alignment: .leading) {
-            Text("Mail")
-              .font(.system(size: 30))
+          VStack(spacing: 10) {
+            Text("Quantum AI is proud to announce \na new lecture series on investing in stocks and cryptocurrencies.")
               .foregroundColor(.white)
-          TextField("", text: $mail)
-            .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
-            .frame(width: 300, height: 40)
-        }
-          .padding(.top, 20)
-        Button {
-          viewModel.showAlert.toggle()
-          userName = ""
-          mail = ""
-        } label: {
-          Text("Register")
-            .foregroundColor(.black)
-            .frame(width: 300, height: 40)
-            .background {
-              Rectangle()
-              Color.white
+              .font(.system(size: 18, weight: .bold))
+              .multilineTextAlignment(.center)
+            Text("This course will provide you with the knowledge and tools you need to make informed investment decisions in these exciting and rapidly evolving markets.")
+              .multilineTextAlignment(.center)
+              .foregroundColor(.white)
+              .font(.system(size: 12, weight: .bold))
+          }.frame(width: 340)
+          
+          VStack(spacing: 20) {
+            VStack(alignment: .leading) {
+              Text("Name")
+                .font(.system(size: 20))
+                .foregroundColor(.white)
+              TextField("", text: $userName)
+                .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
+                .frame(width: 300, height: 40)
             }
-            .cornerRadius(18)
-            .shadow(color: .white, radius: 4)
+            .padding(.top, 20)
+            VStack(alignment: .leading) {
+              Text("Mail")
+                .font(.system(size: 20))
+                .foregroundColor(.white)
+              TextField("", text: $mail)
+                .modifier(customViewModifier(roundedCornes: 18, startColor: .white, endColor: .white, color: Color.white, textColor: .black))
+                .frame(width: 300, height: 40)
+            }
+            
+            Button {
+              showAlert.toggle()
+              userName = ""
+              mail = ""
+            } label: {
+              Text("Register")
+                .foregroundColor(.black)
+                .frame(width: 300, height: 30)
+                .background {
+                  Rectangle()
+                  Color.white
+                }
+                .cornerRadius(18)
+                .shadow(color: .white, radius: 4)
+            }
+          }
         }
-        .padding(.top, 20)
-        .alert("Thank you we will send you an invitation", isPresented: $viewModel.showAlert) {
+        .alert("Thank you we will send you an invitation", isPresented: $showAlert) {
           Button("Ok", role: .cancel) {}
         }
       }
-    }
-    .onAppear {
-      viewModel.getEvent()
     }
   }
 }
@@ -115,6 +115,6 @@ struct customViewModifier: ViewModifier {
 
 struct EventView_Previews: PreviewProvider {
   static var previews: some View {
-    EventView(viewModel: EventViewModel())
+    EventView()
   }
 }

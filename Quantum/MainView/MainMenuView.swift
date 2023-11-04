@@ -21,8 +21,9 @@ struct MainMenuView: View {
           .scaledToFill()
           .ignoresSafeArea()
         VStack(alignment: .center) {
+          Spacer()
             menuButtons()
-              .padding(.bottom, 40)
+              .padding(.bottom, 70)
           NavigationLink {
             FinCalculatorView()
               .preferredColorScheme(.dark)
@@ -55,35 +56,7 @@ struct MainMenuView: View {
 
 @ViewBuilder private func menuButtons() -> some View {
   VStack {
-    HStack {
-      NavigationLink {
-        LessonsView(viewModel: LessonViewModel())
-      } label: {
-        VStack {
-          Image("lessons")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 180, height: 150)
-          Text("Lessons")
-            .foregroundColor(.white)
-            .font(.system(size: 28, weight: .bold))
-        }
-      }
-      NavigationLink {
-        SettingsView()
-      } label: {
-        VStack {
-          Image("settings")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 80, height: 80)
-          Text("Settings")
-            .foregroundColor(.white)
-            .font(.system(size: 20, weight: .bold))
-        }
-      }
-    }
-    HStack(spacing: 40) {
+    HStack(spacing: 100) {
       NavigationLink {
         InvestDiaryList().environmentObject(InvestViewModel())
       } label: {
@@ -105,14 +78,31 @@ struct MainMenuView: View {
           Image("visual")
             .resizable()
             .scaledToFit()
-            .frame(width: 140, height: 120)
+            .frame(width: 80, height: 80)
           Text("Visual")
             .foregroundColor(.white)
             .font(.system(size: 24, weight: .bold))
         }
       }
     }
-    HStack(spacing: 40) {
+    
+    HStack {
+      NavigationLink {
+        LessonsView(viewModel: LessonViewModel())
+      } label: {
+        VStack {
+          Image("lessons")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 180, height: 150)
+          Text("Lessons")
+            .foregroundColor(.white)
+            .font(.system(size: 28, weight: .bold))
+        }
+      }
+    }
+    
+    HStack(spacing: 100) {
       NavigationLink {
         Currencies(viewModel: CurrencyViewModel())
       } label: {
@@ -120,14 +110,14 @@ struct MainMenuView: View {
           Image("currencies")
             .resizable()
             .scaledToFit()
-            .frame(width: 140, height: 140)
+            .frame(width: 80, height: 80)
           Text("Currencies")
             .foregroundColor(.white)
             .font(.system(size: 20, weight: .bold))
         }
       }
       NavigationLink {
-        EventView(viewModel: EventViewModel())
+        EventView()
           .environment(\.colorScheme, .dark)
       } label: {
         VStack {

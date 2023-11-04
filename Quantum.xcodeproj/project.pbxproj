@@ -11,7 +11,6 @@
 		7E34E0982A8B3055006C82DA /* CurrenciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0972A8B3055006C82DA /* CurrenciesCell.swift */; };
 		7E34E09A2A8B4225006C82DA /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0992A8B4225006C82DA /* CurrencyViewModel.swift */; };
 		7E34E09C2A8B44B8006C82DA /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E09B2A8B44B8006C82DA /* EventView.swift */; };
-		7E34E0BC2A8C020D006C82DA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34E0BB2A8C020D006C82DA /* EventViewModel.swift */; };
 		7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9D92A71426E00BA395D /* NetworkModel.swift */; };
 		7E4FF9DC2A71427B00BA395D /* NetwofkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */; };
 		7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */; };
@@ -35,11 +34,6 @@
 		7EC2F7B72A6A75A900CAD2BF /* InvestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B62A6A75A900CAD2BF /* InvestModel.swift */; };
 		7EC2F7B92A6A8E2200CAD2BF /* VisualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7B82A6A8E2200CAD2BF /* VisualView.swift */; };
 		7EC2F7BE2A6A936200CAD2BF /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC2F7BD2A6A936200CAD2BF /* SwiftUICharts */; };
-		7EC2F7C02A6AB70A00CAD2BF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */; };
-		7EC2F7C22A6AB8E800CAD2BF /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */; };
-		7EC8EB262AAA28CE001582F8 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8EB252AAA28CE001582F8 /* PurchaseManager.swift */; };
-		7EC8EB282AAA28F4001582F8 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8EB272AAA28F4001582F8 /* PurchaseView.swift */; };
-		7EC8EB2A2AAA291A001582F8 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8EB292AAA291A001582F8 /* PurchaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +42,6 @@
 		7E34E0972A8B3055006C82DA /* CurrenciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCell.swift; sourceTree = "<group>"; };
 		7E34E0992A8B4225006C82DA /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		7E34E09B2A8B44B8006C82DA /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
-		7E34E0BB2A8C020D006C82DA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		7E4FF9D92A71426E00BA395D /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		7E4FF9DB2A71427B00BA395D /* NetwofkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwofkService.swift; sourceTree = "<group>"; };
 		7E4FF9DD2A71447E00BA395D /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
@@ -72,11 +65,6 @@
 		7EC2F7B42A6A73B200CAD2BF /* InvestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestViewModel.swift; sourceTree = "<group>"; };
 		7EC2F7B62A6A75A900CAD2BF /* InvestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestModel.swift; sourceTree = "<group>"; };
 		7EC2F7B82A6A8E2200CAD2BF /* VisualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualView.swift; sourceTree = "<group>"; };
-		7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
-		7EC8EB252AAA28CE001582F8 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
-		7EC8EB272AAA28F4001582F8 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
-		7EC8EB292AAA291A001582F8 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				7E34E09B2A8B44B8006C82DA /* EventView.swift */,
-				7E34E0BB2A8C020D006C82DA /* EventViewModel.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -126,16 +113,6 @@
 				7E82BD9E2A99B41A004B6B72 /* PopupView.swift */,
 			);
 			path = PopupView;
-			sourceTree = "<group>";
-		};
-		7EA562BE2AB4934400C09F52 /* Purchase */ = {
-			isa = PBXGroup;
-			children = (
-				7EC8EB292AAA291A001582F8 /* PurchaseButton.swift */,
-				7EC8EB272AAA28F4001582F8 /* PurchaseView.swift */,
-				7EC8EB252AAA28CE001582F8 /* PurchaseManager.swift */,
-			);
-			path = Purchase;
 			sourceTree = "<group>";
 		};
 		7EC2F7862A695EB400CAD2BF = {
@@ -158,14 +135,12 @@
 		7EC2F7912A695EB400CAD2BF /* Quantum */ = {
 			isa = PBXGroup;
 			children = (
-				7EA562BE2AB4934400C09F52 /* Purchase */,
 				7E82BD9D2A99B406004B6B72 /* PopupView */,
 				7E34E0922A8B2E33006C82DA /* Events */,
 				7E34E0912A8B2E2A006C82DA /* Currencies */,
 				7E4FF9D82A71425900BA395D /* NetworkService */,
 				7EC2F7AB2A6971FC00CAD2BF /* Visual */,
 				7EC2F7AA2A6971F500CAD2BF /* Diary */,
-				7EC2F7A92A6971EF00CAD2BF /* Settings */,
 				7EC2F7A82A6971E800CAD2BF /* Lessons */,
 				7EC2F7A52A69670400CAD2BF /* MainView */,
 				7EC2F7922A695EB400CAD2BF /* QuantumApp.swift */,
@@ -206,15 +181,6 @@
 				7EA562C12AB498F000C09F52 /* FirstLessonView.swift */,
 			);
 			path = Lessons;
-			sourceTree = "<group>";
-		};
-		7EC2F7A92A6971EF00CAD2BF /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				7EC2F7BF2A6AB70A00CAD2BF /* SettingsView.swift */,
-				7EC2F7C12A6AB8E800CAD2BF /* CustomFont.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		7EC2F7AA2A6971F500CAD2BF /* Diary */ = {
@@ -318,9 +284,7 @@
 				7E4FF9DC2A71427B00BA395D /* NetwofkService.swift in Sources */,
 				7EC2F7952A695EB400CAD2BF /* ContentView.swift in Sources */,
 				7EA80EB32AAB6350001AEF97 /* LessonStructMapper.swift in Sources */,
-				7EC8EB282AAA28F4001582F8 /* PurchaseView.swift in Sources */,
 				7EC2F7B72A6A75A900CAD2BF /* InvestModel.swift in Sources */,
-				7EC2F7C22A6AB8E800CAD2BF /* CustomFont.swift in Sources */,
 				7EC2F7B12A697AF300CAD2BF /* InvestDiaryView.swift in Sources */,
 				7EA80EB52AAB637D001AEF97 /* LessonModel.swift in Sources */,
 				7E34E09A2A8B4225006C82DA /* CurrencyViewModel.swift in Sources */,
@@ -330,18 +294,14 @@
 				7EC2F7A72A69671D00CAD2BF /* MainMenuView.swift in Sources */,
 				7EC2F7932A695EB400CAD2BF /* QuantumApp.swift in Sources */,
 				7E82BD9F2A99B41A004B6B72 /* PopupView.swift in Sources */,
-				7EC8EB262AAA28CE001582F8 /* PurchaseManager.swift in Sources */,
 				7EA562C22AB498F000C09F52 /* FirstLessonView.swift in Sources */,
 				7E4FF9DE2A71447E00BA395D /* LessonViewModel.swift in Sources */,
 				7EC2F7B52A6A73B200CAD2BF /* InvestViewModel.swift in Sources */,
 				7E4FF9DA2A71426E00BA395D /* NetworkModel.swift in Sources */,
 				7EC2F7B32A69862000CAD2BF /* InvestDiaryList.swift in Sources */,
-				7EC8EB2A2AAA291A001582F8 /* PurchaseButton.swift in Sources */,
 				7E34E0982A8B3055006C82DA /* CurrenciesCell.swift in Sources */,
-				7EC2F7C02A6AB70A00CAD2BF /* SettingsView.swift in Sources */,
 				7EC2F7B92A6A8E2200CAD2BF /* VisualView.swift in Sources */,
 				7EC2F7AF2A69764A00CAD2BF /* LessonDesciption.swift in Sources */,
-				7E34E0BC2A8C020D006C82DA /* EventViewModel.swift in Sources */,
 				7E34E09C2A8B44B8006C82DA /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,8 +437,8 @@
 				INFOPLIST_FILE = Quantum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "\"\"";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,8 +470,8 @@
 				INFOPLIST_FILE = Quantum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "\"\"";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

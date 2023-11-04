@@ -24,7 +24,7 @@ struct InvestDiaryList: View {
           .foregroundColor(.white)
           .padding(.bottom, 60)
         VStack(spacing: 20) {
-          ScrollView {
+          ScrollView(showsIndicators: false) {
             ForEach(viewModel.model) { item in
               HStack(spacing: 60) {
                   Text(item.date)

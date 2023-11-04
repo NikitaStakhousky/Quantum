@@ -21,7 +21,7 @@ struct FinCalculatorView: View {
         ZStack {
             Color.black
                 .ignoresSafeArea(.all)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing:40){
                     VStack {
                         Text("Compound Interest").font(.largeTitle).foregroundColor(.white)
@@ -183,7 +183,7 @@ struct ListView :View {
             Color.black
                 .ignoresSafeArea(.all)
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     HStack{
                         

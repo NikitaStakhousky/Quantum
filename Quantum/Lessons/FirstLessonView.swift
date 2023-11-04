@@ -18,7 +18,7 @@ struct FirstLessonView: View {
         .scaledToFill()
         .ignoresSafeArea()
       VStack {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
           Text("Lesson 1")
             .font(.system(size: 34, weight: .bold))
             .frame(width: 280, height: 54)
